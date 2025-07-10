@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>রিলেটেড পণ্য</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>রিলেটেড পণ্য</h1>
+    </header>
+    <a href="index.html" class="home-button">🏠 হোমপেজে ফিরে যান</a>
+
+    <main class="container">
+        <section class="products-section">
+            <div id="productsContainer" class="products-grid"></div>
+        </section>
+
+        <!-- ✅ ফর্ম বসানোর জন্য সঠিক জায়গা -->
+        <section id="orderFormSection" class="order-form-section">
+            <!-- অর্ডার ফর্ম এখানে জাভাস্ক্রিপ্ট দ্বারা যোগ হবে -->
+        </section>
+    </main>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()" aria-label="Close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="products.js" defer></script>
+    <script src="related.js" defer></script>
+    <script src="script.js" defer></script>
+
+</body>
+</html>

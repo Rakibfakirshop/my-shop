@@ -1,0 +1,559 @@
+/*================== Reset & Body ==================*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: 'Noto Serif Bengali', serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/*================== Header ==================*/
+.site-header {
+    background-color: #006a4e; /* বাংলাদেশের পতাকার সবুজ */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.header-content div {
+    background-color: #f42a41; /* বাংলাদেশের লাল */
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    color: white;
+    max-width: 90%;
+    margin-top: 10px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+/*================== Container & Intro ==================*/
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.intro-section {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/*================== Search Section ==================*/
+.search-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-section button {
+    padding: 10px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-section button:hover {
+    background-color: #218838;
+}
+
+/*================== Product Grid & Cards ==================*/
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 128, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border: 4px solid #4caf50;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+/*================== Badge ==================*/
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(45deg, #d4af37, #ffd700);
+    color: #000;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    font-family: 'Noto Serif Bengali', serif;
+}
+
+/*================== Product Name ==================*/
+.product-name {
+    background: linear-gradient(90deg, #ffd700, #f9d423);
+    color: #1b1b1b;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    font-family: 'Noto Serif Bengali', serif;
+}
+
+/*================== Product Description ==================*/
+.product-description {
+    background-color: #f8f9fa;
+    border-left: 4px solid #28a745;
+    padding: 10px 15px;
+    border-radius: 6px;
+    color: #333;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*================== Order Button ==================*/
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.03);
+    box-shadow: 0 3px 8px rgba(0, 128, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    button {
+        width: 100%;
+        padding: 14px;
+        font-size: 18px;
+    }
+}
+
+/*================== Order Form ==================*/
+.order-form-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.order-form {
+    border: 2px solid #4caf50;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+}
+
+.order-form input,
+.order-form textarea {
+    background-color: #f1f8f1;
+    border: 1px solid #a5d6a7;
+    border-radius: 6px;
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #2e7d32;
+    box-sizing: border-box;
+}
+
+.order-form label {
+    font-weight: bold;
+    color: #1b5e20;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.order-form button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-form button[type="submit"]:hover {
+    background-color: #388e3c;
+}
+
+/*================== Footer ==================*/
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+}
+body.dark {
+    background-color: #181818;
+    color: #e0e0e0;
+}
+body.dark .site-header {
+    background-color: #222;
+    color: #fff;
+}
+body.dark .header-content div {
+    background-color: #3a3a3a;
+    color: #fff;
+}
+body.dark .profile-pic {
+    border-color: #333;
+}
+body.dark .products-grid {
+    background-color: #1f1f1f;
+}
+body.dark .product-card {
+    background-color: #252525;
+    border-color: #333;
+    color: #f1f1f1;
+}
+body.dark .badge {
+    background: linear-gradient(45deg, #333, #444);
+    color: #f9d423;
+}
+body.dark .product-name {
+    background: linear-gradient(90deg, #444, #333);
+    color: #ffd700;
+}
+body.dark .product-description {
+    background-color: #232323;
+    border-left-color: #ffd700;
+    color: #fff;
+}
+body.dark button,
+body.dark .search-section button {
+    background-color: #333;
+    color: #ffd700;
+}
+body.dark button:hover,
+body.dark .search-section button:hover {
+    background-color: #222;
+    color: #fff;
+}
+body.dark .order-form-section,
+body.dark .order-form {
+    background-color: #232323;
+    color: #ffd700;
+    border-color: #ffd700;
+}
+body.dark .order-form input,
+body.dark .order-form textarea {
+    background-color: #1c1c1c;
+    border-color: #444;
+    color: #ffd700;
+}
+body.dark .order-form label {
+    color: #ffd700;
+}
+body.dark .site-footer {
+    background-color: #111;
+    color: #ffd700;
+}
+body.dark .footer-content h3 {
+    color: #ffd700;
+}
+body,
+.site-header,
+.header-content div,
+.products-grid,
+.product-card,
+.badge,
+.product-name,
+.product-description,
+button,
+.search-section button,
+.order-form-section,
+.order-form,
+.order-form input,
+.order-form textarea,
+.site-footer {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+h1, h2, h3, .product-name, .badge {
+    font-family: 'Noto Serif Bengali', serif;
+    letter-spacing: 0.5px;
+}
+button:hover {
+    background-color: #1e7e34; /* গাঢ় সবুজ */
+}
+body,
+.site-header,
+.header-content div,
+.products-grid,
+.product-card,
+.badge,
+.product-name,
+.product-description,
+button,
+.search-section button,
+.order-form-section,
+.order-form,
+.order-form input,
+.order-form textarea,
+.site-footer {
+    transition: background-color 0.4s ease, color 0.4s ease, transform 0.3s ease;
+}
+@media (max-width: 480px) {
+    .products-grid {
+        gap: 15px;
+        padding: 10px;
+    }
+}
+/*========= Product Image Same Frame Size Fix ==========*/
+.product-card img {
+    width: 100%;
+    height: 250px; /* প্রয়োজনমতো 220px / 300px করতে পারো */
+    border: 4px solid #4caf50;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: cover; /* ফ্রেমে সমানভাবে রাখবে */
+    object-position: center center;
+    background-color: #fff;
+}
+/*================== Modal Full Image View ==================*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    transition: 0.3s;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+    object-fit: contain;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+.close {
+    position: absolute;
+    top: 30px; right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+}
+/*================== Modal Full Image View ==================*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    transition: 0.3s;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+    object-fit: contain;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+.close {
+    position: absolute;
+    top: 30px; right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+}
+.modal {
+    display: none;
+    position: fixed; /* fixed রাখলে স্ক্রল করবে না */
+    z-index: 9999;
+    padding-top: 10vh; /* ওপরে থেকে ফাঁকা */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* overflow scroll বন্ধ */
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.modal.show .modal-content {
+    transform: scale(1.05);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+}
+.product-title {
+    background-color: #000; /* সবুজ ব্যাকগ্রাউন্ড */
+    color: white;              /* টেক্সট সাদা */
+    padding: 5px 10px;         /* সুন্দর মার্জিনের জন্য */
+    border-radius: 5px;        /* কোণ গোল করার জন্য */
+    display: inline-block;     /* ব্যাকগ্রাউন্ড টাইট করতে */
+    margin-bottom: 5px;        /* নিচে হালকা গ্যাপ রাখতে */
+    font-weight: bold;         /* টেক্সট বোল্ড */
+}
+.intro-section {
+    background: linear-gradient(135deg, #e8f5e9,#c8e6c9); /* হালকা ধূসর গ্রেডিয়েন্ট */
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* হালকা শেডো */
+    margin: 15px 0;
+}
+
+.intro-section p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333; /* সুন্দর কালো রঙ */
+    margin: 0;
+}
+.product-price {
+    display: inline-block;
+    background: linear-gradient(135deg, #000, #333); /* কালো গ্রেডিয়েন্ট */
+    color: #fff; /* সাদা লেখা */
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    margin: 8px 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-price:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.home-button {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.home-button:hover {
+    background: #45a049;
+}
+body.dark .order-button {
+    background-color: #28a745 !important;
+    color: white !important;
+}

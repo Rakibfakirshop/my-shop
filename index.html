@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমার শপ - অনলাইন শপিং</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="dark-mode-toggle">
+            <label>
+                <input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()" />
+                🌙 ডার্ক মোড
+            </label>
+        </div>
+
+        <div class="header-content">
+            <img src="assets/myphoto.jpg" alt="মালিকের ছবি" class="profile-pic">
+            <div>
+                <h1>আমার অনলাইন শপে স্বাগতম!</h1>
+                <p>আসসালামু আলাইকুম, আমি আপনার জন্য মানসম্মত পণ্য নিয়ে হাজির হয়েছি আমি রাকিব</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro-section">
+            <p>আপনার পছন্দের পণ্য নির্বাচন করে অর্ডার করুন, আমরা ২৪ ঘন্টার মধ্যে ডেলিভারি দেব</p>
+        </section>
+
+        <section class="search-section">
+            <input type="text" id="searchInput" placeholder="পণ্যের নাম লিখুন...">
+            <button onclick="searchProducts()"><i class="fas fa-search"></i> খুঁজুন</button>
+        </section>
+
+        <section class="products-section">
+            <h2><i class="fas fa-shopping-bag"></i> আমাদের পণ্য সমূহ</h2>
+            <div id="productsContainer" class="products-grid"></div>
+        </section>
+
+        <section id="orderFormSection" class="order-form-section"></section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3><i class="fas fa-headset"></i> যোগাযোগ</h3>
+                <p><i class="fas fa-phone"></i> +৮৮০১৮১১২৭৭৪৮৮</p>
+                <p><i class="fas fa-envelope"></i> contact@myshop.com</p>
+            </div>
+            <div class="business-hours">
+                <h3><i class="fas fa-clock"></i> কর্মসময়</h3>
+                <p>শনি - বৃহস্পতি: সকাল ৯টা - রাত ১০টা</p>
+                <p>শুক্রবার: বন্ধ</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; ২০২৫ আমার শপ. সর্বস্বত্ব সংরক্ষিত</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
