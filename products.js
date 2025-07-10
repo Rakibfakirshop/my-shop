@@ -4,7 +4,7 @@ const products = [
         id: 1,
         name: "টি-শার্ট",
         price: "২৫০",
-        image: "assets/tshirt.jpg",
+        image: "tshirt.jpg",
         description: "উচ্চ মানের সুতি কাপড়, সকল সাইজে পাওয়া যায়",
         badge: "বেস্ট সেলার"
     },
